@@ -1,0 +1,239 @@
+
+togrep: ['BGRUlastEncoder']
+
+Namespace(batch_size=64, decay=0.99, dpout_fc=0.0, dpout_model=0.0, enc_lstm_dim=128, encoder_type='BGRUlastEncoder', epochs=20, fc_dim=512, gpu_id=3, lr=0.1, lrshrink=5, max_norm=5.0, minlr=1e-05, n_classes=2, n_enc_layers=1, name='model.pkl', nonlinear_fc=0.0, optimizer='sgd', output='/home/usuaris/yassine/SemevalQA/SemevalQA/savedir/BGRUlastEncoder', path='/home/usuaris/yassine/SemevalQA/SemevalQA/data/datasets/processed', pool_type='max', result='BGRUlastEncoder.semeval', seed=1234)
+Found 9682(/101876) words with glove vectors
+Vocab size: 9682
+CQANet(
+  (encoder): BGRUlastEncoder(
+    (enc_lstm): GRU(100, 128, bidirectional=True)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): Linear(in_features=512, out_features=512, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+  )
+)
+
+Training: Epoch 1
+6336 ; loss 43.6 ; sentence/s 597; words/s 31825 ; accuracy train: 57.67
+12736 ; loss 43.08 ; sentence/s 555; words/s 32164 ; accuracy train: 59.0
+19136 ; loss 43.06 ; sentence/s 588; words/s 32657 ; accuracy train: 59.28
+25536 ; loss 42.77 ; sentence/s 569; words/s 33044 ; accuracy train: 59.82
+results: epoch 1 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 1
+togrep: results: epoch 1 ; mean accuracy valid: 20.0
+saving model at epoch 1
+
+Training: Epoch 2
+6336 ; loss 43.33 ; sentence/s 462; words/s 24668 ; accuracy train: 58.45
+12736 ; loss 42.84 ; sentence/s 552; words/s 31985 ; accuracy train: 59.45
+19136 ; loss 42.81 ; sentence/s 588; words/s 32682 ; accuracy train: 59.58
+25536 ; loss 42.72 ; sentence/s 568; words/s 33003 ; accuracy train: 60.0
+results: epoch 2 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 2
+togrep: results: epoch 2 ; mean accuracy valid: 20.0
+saving model at epoch 2
+
+Training: Epoch 3
+6336 ; loss 43.27 ; sentence/s 602; words/s 32117 ; accuracy train: 58.48
+12736 ; loss 42.75 ; sentence/s 551; words/s 31959 ; accuracy train: 59.42
+19136 ; loss 42.7 ; sentence/s 589; words/s 32702 ; accuracy train: 59.55
+25536 ; loss 42.66 ; sentence/s 566; words/s 32845 ; accuracy train: 60.0
+results: epoch 3 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 3
+togrep: results: epoch 3 ; mean accuracy valid: 20.0
+saving model at epoch 3
+
+Training: Epoch 4
+6336 ; loss 43.22 ; sentence/s 608; words/s 32434 ; accuracy train: 58.52
+12736 ; loss 42.68 ; sentence/s 553; words/s 32083 ; accuracy train: 59.4
+19136 ; loss 42.61 ; sentence/s 589; words/s 32686 ; accuracy train: 59.51
+25536 ; loss 42.61 ; sentence/s 571; words/s 33135 ; accuracy train: 59.96
+results: epoch 4 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 4
+togrep: results: epoch 4 ; mean accuracy valid: 21.0
+saving model at epoch 4
+
+Training: Epoch 5
+6336 ; loss 43.19 ; sentence/s 608; words/s 32449 ; accuracy train: 58.39
+12736 ; loss 42.62 ; sentence/s 552; words/s 31971 ; accuracy train: 59.42
+19136 ; loss 42.54 ; sentence/s 590; words/s 32765 ; accuracy train: 59.63
+25536 ; loss 42.56 ; sentence/s 569; words/s 33044 ; accuracy train: 60.06
+results: epoch 5 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 5
+togrep: results: epoch 5 ; mean accuracy valid: 21.0
+saving model at epoch 5
+
+Training: Epoch 6
+6336 ; loss 43.15 ; sentence/s 608; words/s 32435 ; accuracy train: 58.41
+12736 ; loss 42.56 ; sentence/s 552; words/s 31983 ; accuracy train: 59.39
+19136 ; loss 42.48 ; sentence/s 589; words/s 32737 ; accuracy train: 59.63
+25536 ; loss 42.51 ; sentence/s 568; words/s 33005 ; accuracy train: 60.07
+results: epoch 6 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 6
+togrep: results: epoch 6 ; mean accuracy valid: 22.0
+saving model at epoch 6
+
+Training: Epoch 7
+6336 ; loss 43.12 ; sentence/s 607; words/s 32368 ; accuracy train: 58.42
+12736 ; loss 42.5 ; sentence/s 554; words/s 32112 ; accuracy train: 59.47
+19136 ; loss 42.42 ; sentence/s 588; words/s 32649 ; accuracy train: 59.71
+25536 ; loss 42.46 ; sentence/s 568; words/s 32963 ; accuracy train: 60.13
+results: epoch 7 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 7
+togrep: results: epoch 7 ; mean accuracy valid: 23.0
+saving model at epoch 7
+
+Training: Epoch 8
+6336 ; loss 43.08 ; sentence/s 606; words/s 32321 ; accuracy train: 58.52
+12736 ; loss 42.45 ; sentence/s 551; words/s 31957 ; accuracy train: 59.56
+19136 ; loss 42.35 ; sentence/s 587; words/s 32599 ; accuracy train: 59.79
+25536 ; loss 42.4 ; sentence/s 571; words/s 33158 ; accuracy train: 60.19
+results: epoch 8 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 8
+togrep: results: epoch 8 ; mean accuracy valid: 24.0
+saving model at epoch 8
+
+Training: Epoch 9
+6336 ; loss 43.04 ; sentence/s 606; words/s 32326 ; accuracy train: 58.36
+12736 ; loss 42.38 ; sentence/s 554; words/s 32115 ; accuracy train: 59.48
+19136 ; loss 42.28 ; sentence/s 591; words/s 32846 ; accuracy train: 59.78
+25536 ; loss 42.33 ; sentence/s 570; words/s 33101 ; accuracy train: 60.24
+results: epoch 9 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 9
+togrep: results: epoch 9 ; mean accuracy valid: 25.0
+saving model at epoch 9
+
+Training: Epoch 10
+6336 ; loss 42.99 ; sentence/s 611; words/s 32599 ; accuracy train: 58.47
+12736 ; loss 42.31 ; sentence/s 557; words/s 32317 ; accuracy train: 59.66
+19136 ; loss 42.2 ; sentence/s 592; words/s 32892 ; accuracy train: 60.11
+25536 ; loss 42.26 ; sentence/s 570; words/s 33099 ; accuracy train: 60.5
+results: epoch 10 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 10
+togrep: results: epoch 10 ; mean accuracy valid: 25.0
+saving model at epoch 10
+
+Training: Epoch 11
+6336 ; loss 42.93 ; sentence/s 608; words/s 32445 ; accuracy train: 58.66
+12736 ; loss 42.24 ; sentence/s 556; words/s 32223 ; accuracy train: 59.84
+19136 ; loss 42.12 ; sentence/s 591; words/s 32824 ; accuracy train: 60.22
+25536 ; loss 42.18 ; sentence/s 567; words/s 32945 ; accuracy train: 60.54
+results: epoch 11 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 11
+togrep: results: epoch 11 ; mean accuracy valid: 26.0
+saving model at epoch 11
+
+Training: Epoch 12
+6336 ; loss 42.86 ; sentence/s 606; words/s 32347 ; accuracy train: 59.14
+12736 ; loss 42.16 ; sentence/s 555; words/s 32178 ; accuracy train: 59.99
+19136 ; loss 42.02 ; sentence/s 588; words/s 32630 ; accuracy train: 60.41
+25536 ; loss 42.1 ; sentence/s 574; words/s 33329 ; accuracy train: 60.72
+results: epoch 12 ; mean accuracy train : 60.0
+
+VALIDATION: Epoch 12
+togrep: results: epoch 12 ; mean accuracy valid: 27.0
+saving model at epoch 12
+
+Training: Epoch 13
+6336 ; loss 42.78 ; sentence/s 611; words/s 32576 ; accuracy train: 59.03
+12736 ; loss 42.07 ; sentence/s 555; words/s 32190 ; accuracy train: 60.09
+19136 ; loss 41.93 ; sentence/s 595; words/s 33022 ; accuracy train: 60.56
+25536 ; loss 42.02 ; sentence/s 573; words/s 33292 ; accuracy train: 60.87
+results: epoch 13 ; mean accuracy train : 61.0
+
+VALIDATION: Epoch 13
+togrep: results: epoch 13 ; mean accuracy valid: 28.0
+saving model at epoch 13
+
+Training: Epoch 14
+6336 ; loss 42.69 ; sentence/s 608; words/s 32445 ; accuracy train: 59.25
+12736 ; loss 41.97 ; sentence/s 553; words/s 32038 ; accuracy train: 60.36
+19136 ; loss 41.83 ; sentence/s 591; words/s 32798 ; accuracy train: 60.78
+25536 ; loss 41.94 ; sentence/s 570; words/s 33077 ; accuracy train: 61.09
+results: epoch 14 ; mean accuracy train : 61.0
+
+VALIDATION: Epoch 14
+togrep: results: epoch 14 ; mean accuracy valid: 29.0
+saving model at epoch 14
+
+Training: Epoch 15
+6336 ; loss 42.6 ; sentence/s 611; words/s 32572 ; accuracy train: 59.45
+12736 ; loss 41.84 ; sentence/s 552; words/s 32008 ; accuracy train: 60.62
+19136 ; loss 41.72 ; sentence/s 591; words/s 32794 ; accuracy train: 61.09
+25536 ; loss 41.85 ; sentence/s 567; words/s 32956 ; accuracy train: 61.31
+results: epoch 15 ; mean accuracy train : 61.0
+
+VALIDATION: Epoch 15
+togrep: results: epoch 15 ; mean accuracy valid: 29.0
+saving model at epoch 15
+
+Training: Epoch 16
+6336 ; loss 42.49 ; sentence/s 611; words/s 32605 ; accuracy train: 59.89
+12736 ; loss 41.7 ; sentence/s 555; words/s 32163 ; accuracy train: 60.88
+19136 ; loss 41.62 ; sentence/s 591; words/s 32803 ; accuracy train: 61.31
+25536 ; loss 41.75 ; sentence/s 572; words/s 33193 ; accuracy train: 61.54
+results: epoch 16 ; mean accuracy train : 61.0
+
+VALIDATION: Epoch 16
+togrep: results: epoch 16 ; mean accuracy valid: 30.0
+saving model at epoch 16
+
+Training: Epoch 17
+6336 ; loss 42.39 ; sentence/s 609; words/s 32476 ; accuracy train: 60.22
+12736 ; loss 41.54 ; sentence/s 559; words/s 32393 ; accuracy train: 61.37
+19136 ; loss 41.51 ; sentence/s 592; words/s 32864 ; accuracy train: 61.67
+25536 ; loss 41.63 ; sentence/s 572; words/s 33237 ; accuracy train: 61.86
+results: epoch 17 ; mean accuracy train : 62.0
+
+VALIDATION: Epoch 17
+togrep: results: epoch 17 ; mean accuracy valid: 31.0
+saving model at epoch 17
+
+Training: Epoch 18
+6336 ; loss 42.28 ; sentence/s 609; words/s 32485 ; accuracy train: 60.69
+12736 ; loss 41.35 ; sentence/s 554; words/s 32088 ; accuracy train: 61.78
+19136 ; loss 41.4 ; sentence/s 584; words/s 32409 ; accuracy train: 62.04
+25536 ; loss 41.51 ; sentence/s 314; words/s 18269 ; accuracy train: 62.16
+results: epoch 18 ; mean accuracy train : 62.0
+
+VALIDATION: Epoch 18
+togrep: results: epoch 18 ; mean accuracy valid: 31.0
+saving model at epoch 18
+
+Training: Epoch 19
+6336 ; loss 42.16 ; sentence/s 610; words/s 32550 ; accuracy train: 60.73
+12736 ; loss 41.16 ; sentence/s 556; words/s 32230 ; accuracy train: 62.16
+19136 ; loss 41.26 ; sentence/s 589; words/s 32693 ; accuracy train: 62.48
+25536 ; loss 41.38 ; sentence/s 575; words/s 33379 ; accuracy train: 62.5
+results: epoch 19 ; mean accuracy train : 62.0
+
+VALIDATION: Epoch 19
+togrep: results: epoch 19 ; mean accuracy valid: 32.0
+saving model at epoch 19
+
+Training: Epoch 20
+6336 ; loss 42.02 ; sentence/s 609; words/s 32508 ; accuracy train: 60.95
+12736 ; loss 40.95 ; sentence/s 558; words/s 32337 ; accuracy train: 62.42
+19136 ; loss 41.12 ; sentence/s 586; words/s 32559 ; accuracy train: 62.79
+25536 ; loss 41.24 ; sentence/s 566; words/s 32888 ; accuracy train: 62.8
+results: epoch 20 ; mean accuracy train : 62.0
+
+VALIDATION: Epoch 20
+togrep: results: epoch 20 ; mean accuracy valid: 32.0
+saving model at epoch 20
+
+TEST: 
+('mAP: ', 0.5067)

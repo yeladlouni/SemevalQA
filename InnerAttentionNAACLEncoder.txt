@@ -1,0 +1,60 @@
+
+togrep: ['InnerAttentionNAACLEncoder']
+
+Namespace(batch_size=64, decay=0.99, dpout_fc=0.0, dpout_model=0.0, enc_lstm_dim=128, encoder_type='InnerAttentionNAACLEncoder', epochs=20, fc_dim=512, gpu_id=3, lr=0.1, lrshrink=5, max_norm=5.0, minlr=1e-05, n_classes=2, n_enc_layers=1, name='model.pkl', nonlinear_fc=0.0, optimizer='sgd', output='/home/usuaris/yassine/SemevalQA/SemevalQA/savedir/InnerAttentionNAACLEncoder', path='/home/usuaris/yassine/SemevalQA/SemevalQA/data/datasets/processed', pool_type='max', result='InnerAttentionNAACLEncoder.semeval', seed=1234)
+Found 9682(/101876) words with glove vectors
+Vocab size: 9682
+CQANet(
+  (encoder): InnerAttentionNAACLEncoder(
+    (enc_lstm): LSTM(100, 128, bidirectional=True)
+    (proj_key): Linear(in_features=256, out_features=256, bias=False)
+    (proj_lstm): Linear(in_features=256, out_features=256, bias=False)
+    (query_embedding): Embedding(1, 256)
+    (softmax): Softmax()
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): Linear(in_features=512, out_features=512, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+  )
+)
+
+Training: Epoch 1
+('w', tensor(3.1342), tensor(-2.9670))
+('alphas', tensor([ 0.0642,  0.0815,  0.0914,  0.0922,  0.0914,  0.0945,  0.0956,
+         0.0954,  0.1006,  0.0996,  0.0936]))
+('w', tensor(3.1342), tensor(-2.9670))
+('alphas', tensor([ 0.1330,  0.1576,  0.1658,  0.1806,  0.1869,  0.1760,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000]))
+('w', tensor(3.1342), tensor(-2.9670))
+('alphas', tensor([ 0.4619,  0.5381]))
+('w', tensor(3.1342), tensor(-2.9670))
+('alphas', tensor([ 0.1328,  0.1588,  0.1756,  0.1845,  0.1756,  0.1727,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000]))
+('w', tensor(3.1342), tensor(-2.9670))
+('alphas', tensor([ 0.4619,  0.5381,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000]))
+('w', tensor(3.1342), tensor(-2.9670))
+('alphas', tensor([ 0.4619,  0.5381,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,
+         0.0000,  0.0000,  0.0000,  0.0000]))
+6336 ; loss 43.5 ; sentence/s 276; words/s 14732 ; accuracy train: 58.77
+12736 ; loss 43.09 ; sentence/s 254; words/s 14733 ; accuracy train: 59.55
+19136 ; loss 43.2 ; sentence/s 272; words/s 15119 ; accuracy train: 59.65
+25536 ; loss 42.76 ; sentence/s 260; words/s 15138 ; accuracy train: 60.09

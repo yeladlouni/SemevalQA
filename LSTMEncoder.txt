@@ -1,0 +1,6 @@
+
+togrep: ['LSTMEncoder']
+
+Namespace(batch_size=64, decay=0.99, dpout_fc=0.0, dpout_model=0.0, enc_lstm_dim=128, encoder_type='LSTMEncoder', epochs=20, fc_dim=512, gpu_id=3, lr=0.1, lrshrink=5, max_norm=5.0, minlr=1e-05, n_classes=2, n_enc_layers=1, name='model.pkl', nonlinear_fc=0.0, optimizer='sgd', output='/home/usuaris/yassine/SemevalQA/SemevalQA/savedir/LSTMEncoder', path='/home/usuaris/yassine/SemevalQA/SemevalQA/data/datasets/processed', pool_type='max', result='LSTMEncoder.semeval', seed=1234)
+Found 9682(/101876) words with glove vectors
+Vocab size: 9682

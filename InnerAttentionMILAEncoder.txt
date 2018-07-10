@@ -1,0 +1,23 @@
+
+togrep: ['InnerAttentionMILAEncoder']
+
+Namespace(batch_size=64, decay=0.99, dpout_fc=0.0, dpout_model=0.0, enc_lstm_dim=128, encoder_type='InnerAttentionMILAEncoder', epochs=20, fc_dim=512, gpu_id=3, lr=0.1, lrshrink=5, max_norm=5.0, minlr=1e-05, n_classes=2, n_enc_layers=1, name='model.pkl', nonlinear_fc=0.0, optimizer='sgd', output='/home/usuaris/yassine/SemevalQA/SemevalQA/savedir/InnerAttentionMILAEncoder', path='/home/usuaris/yassine/SemevalQA/SemevalQA/data/datasets/processed', pool_type='max', result='InnerAttentionMILAEncoder.semeval', seed=1234)
+Found 9682(/101876) words with glove vectors
+Vocab size: 9682
+CQANet(
+  (encoder): InnerAttentionMILAEncoder(
+    (enc_lstm): LSTM(100, 128, bidirectional=True)
+    (proj_key): Linear(in_features=256, out_features=256, bias=False)
+    (proj_lstm): Linear(in_features=256, out_features=256, bias=False)
+    (query_embedding): Embedding(2, 256)
+    (softmax): Softmax()
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=4096, out_features=512, bias=True)
+    (1): Linear(in_features=512, out_features=512, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+  )
+)
+
+Training: Epoch 1
+6336 ; loss 43.5 ; sentence/s 219; words/s 11713 ; accuracy train: 58.53
